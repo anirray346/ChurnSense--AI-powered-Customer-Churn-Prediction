@@ -7,8 +7,7 @@ st.set_page_config(page_title="Batch Prediction", page_icon="📁", layout="wide
 
 @st.cache_resource
 def load_model():
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    return joblib.load(os.path.join(BASE_DIR, 'models', 'best_model.pkl'))
+    return joblib.load('models/best_model.pkl')
 
 model = load_model()
 
