@@ -7,9 +7,8 @@ st.set_page_config(page_title="Analytics", page_icon="📈", layout="wide")
 
 @st.cache_data
 def load_data():
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-    return pd.read_csv(os.path.join(BASE_DIR, 'data', 'WA_Fn-UseC_-Telco-Customer-Churn.csv'))
-
+    return pd.read_csv('data/WA_Fn-UseC_-Telco-Customer-Churn.csv')
+    
 df = load_data()
 
 st.title("📈 Analytics — Data Insights")
