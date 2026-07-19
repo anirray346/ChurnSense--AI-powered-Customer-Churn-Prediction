@@ -15,14 +15,12 @@ st.set_page_config(
 )
 
 @st.cache_resource
-def load_model():
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    return joblib.load(os.path.join(BASE_DIR, 'models', 'best_model.pkl'))
+def load_data():
+    return pd.read_csv('data/WA_Fn-UseC_-Telco-Customer-Churn.csv')
 
 @st.cache_data
-def load_data():
-    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    return pd.read_csv(os.path.join(BASE_DIR, 'data', 'WA_Fn-UseC_-Telco-Customer-Churn.csv'))
+def load_model():
+    return joblib.load('models/best_model.pkl')
 
 model = load_model()
 df = load_data()
