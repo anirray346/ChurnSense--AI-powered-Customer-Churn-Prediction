@@ -66,10 +66,26 @@ col2.metric("F1 Score", "0.5771")
 col3.metric("Precision", "0.6726")
 col4.metric("Recall", "0.5053")
 
-# SHAP plot
+# SHAP feature plot
 st.subheader("SHAP Feature Importance")
 shap_path = 'reports/shap_importance.png'
 if os.path.exists(shap_path):
     st.image(shap_path, caption='SHAP Feature Importance')
 else:
     st.warning("SHAP plot not found.")
+    
+# SHAP Summary Plot
+st.subheader("SHAP Summary Plot")
+shap_summary_path = 'reports/shap_summary.png'
+if os.path.exists(shap_summary_path):
+    st.image(shap_summary_path, caption='SHAP Summary Plot')
+else:
+    st.warning("SHAP Summary plot not found.")
+
+# SHAP Waterfall Plot
+st.subheader("SHAP Waterfall Plot — Customer 10")
+shap_waterfall_path = 'reports/shap_waterfall.png'
+if os.path.exists(shap_waterfall_path):
+    st.image(shap_waterfall_path, caption='SHAP Waterfall Plot')
+else:
+    st.warning("SHAP Waterfall plot not found.")
