@@ -68,9 +68,8 @@ col4.metric("Recall", "0.5053")
 
 # SHAP plot
 st.subheader("SHAP Feature Importance")
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-shap_path = os.path.join(BASE_DIR, 'reports', 'shap_importance.png')
+shap_path = 'reports/shap_importance.png'
 if os.path.exists(shap_path):
     st.image(shap_path, caption='SHAP Feature Importance', use_container_width=True)
 else:
-    st.warning("SHAP plot not found. Run Session 5 notebook first.")
+    st.warning("SHAP plot not found.")
