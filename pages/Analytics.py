@@ -70,6 +70,6 @@ col4.metric("Recall", "0.5053")
 st.subheader("SHAP Feature Importance")
 shap_path = 'reports/shap_importance.png'
 if os.path.exists(shap_path):
-    st.image(shap_path, caption='SHAP Feature Importance', use_container_width=True)
+    st.image(shap_path, caption='SHAP Feature Importance')
 else:
     st.warning("SHAP plot not found.")
