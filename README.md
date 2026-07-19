@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## 🌐 Live Demo
-👉 **[Click here to open the app]([https://your-streamlit-url-here](https://churnsense--ai-powered-customer-churn-prediction-app.streamlit.app/))**
+👉 **[Click here to open the app]([https://churnsense--ai-powered-customer-churn-prediction-app.streamlit.app/])**
 
 ---
 
