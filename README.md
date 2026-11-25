@@ -14,7 +14,7 @@
 ## 📌 Project Overview
 ChurnSense is an end-to-end Machine Learning project that predicts whether a telecom customer will churn (leave the service) based on their usage patterns, contract type, and billing information.
 
-Built as part of the **IoT Academy Data Science & ML Internship**, this project covers the complete ML pipeline — from raw data to a deployed web application.
+Built as part of the **Uniconverge Technologies Pvt. Ltd. Data Science & ML Internship**, this project covers the complete ML pipeline — from raw data to a deployed web application.
 
 ---
 
@@ -94,7 +94,8 @@ Built as part of the **IoT Academy Data Science & ML Internship**, this project 
 
 ---
 
-## 📁 Project Structure
+### 📁 Project Structure
+```text
 ChurnSense/
 ├── app/
 │   ├── Dashboard.py          # Main dashboard page
@@ -186,7 +187,7 @@ tests/test_pipeline.py::test_prediction_has_risk_level  PASSED ✅
 ---
 
 ## 🏆 Certification
-This project was built as part of the **IoT Academy Data Science & ML Internship Program**.
+This project was built as part of the **Uniconverge Technologies Pvt. Ltd. Data Science & ML Internship Program**.
 
 ---
 
